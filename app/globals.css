@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 @layer base {
   :root {
@@ -72,7 +74,10 @@
 
     --sidebar-border: 220 13% 91%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%}
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --creative-ai-gradient: linear-gradient(180deg, #f55c7a 0%, #f6bc66 100%);
+  }
   .dark {
 
     --background: 0 0% 3.9%;
@@ -150,4 +155,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.text-vivid {
+  background: linear-gradient(180deg, #F55C7A 0%, #F6BC66 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
